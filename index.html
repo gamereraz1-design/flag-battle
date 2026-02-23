@@ -14,10 +14,6 @@ html,body{
   display:flex;flex-direction:column;align-items:center;
   overflow:hidden;user-select:none;color:#fff;
 }
-
-/* ============================================================
-   LICENSE / LOGIN SCREEN
-   ============================================================ */
 #licenseScreen{
   position:fixed;inset:0;z-index:9999;
   background:radial-gradient(ellipse at 50% 30%,#071428 0%,#030a18 60%,#000510 100%);
@@ -33,67 +29,21 @@ html,body{
   display:flex;flex-direction:column;align-items:center;gap:18px;
   box-shadow:0 0 60px rgba(0,150,255,0.18);
 }
-.lic-logo{
-  font-family:'Orbitron',sans-serif;
-  font-size:2rem;font-weight:900;
-  color:#00d4ff;letter-spacing:6px;
-  text-shadow:0 0 30px #00d4ff88;
-  text-align:center;
-}
-.lic-sub{
-  font-size:.72rem;color:#446688;
-  letter-spacing:3px;text-align:center;margin-top:-10px;
-}
-.lic-label{
-  font-size:.75rem;font-weight:700;
-  color:#7799aa;letter-spacing:1px;
-  text-transform:uppercase;align-self:flex-start;
-}
-.lic-input{
-  width:100%;padding:14px 18px;
-  background:rgba(0,20,50,0.8);
-  border:1.5px solid rgba(0,180,255,0.25);
-  border-radius:10px;
-  color:#fff;font-family:'Exo 2',sans-serif;
-  font-size:1.05rem;letter-spacing:3px;
-  outline:none;text-align:center;
-  transition:border-color .2s;
-}
+.lic-logo{font-family:'Orbitron',sans-serif;font-size:2rem;font-weight:900;color:#00d4ff;letter-spacing:6px;text-shadow:0 0 30px #00d4ff88;text-align:center;}
+.lic-sub{font-size:.72rem;color:#446688;letter-spacing:3px;text-align:center;margin-top:-10px;}
+.lic-label{font-size:.75rem;font-weight:700;color:#7799aa;letter-spacing:1px;text-transform:uppercase;align-self:flex-start;}
+.lic-input{width:100%;padding:14px 18px;background:rgba(0,20,50,0.8);border:1.5px solid rgba(0,180,255,0.25);border-radius:10px;color:#fff;font-family:'Exo 2',sans-serif;font-size:1.05rem;letter-spacing:3px;outline:none;text-align:center;transition:border-color .2s;}
 .lic-input:focus{border-color:#00d4ff;}
 .lic-input::placeholder{color:#334455;letter-spacing:1px;}
-.lic-btn{
-  width:100%;padding:15px 0;
-  background:linear-gradient(135deg,#00d4ff,#0077cc);
-  color:#000;font-family:'Orbitron',sans-serif;
-  font-size:1rem;font-weight:900;letter-spacing:4px;
-  border:none;border-radius:10px;cursor:pointer;
-  box-shadow:0 0 25px rgba(0,180,255,0.35);
-  transition:transform .1s,opacity .2s;
-}
+.lic-btn{width:100%;padding:15px 0;background:linear-gradient(135deg,#00d4ff,#0077cc);color:#000;font-family:'Orbitron',sans-serif;font-size:1rem;font-weight:900;letter-spacing:4px;border:none;border-radius:10px;cursor:pointer;box-shadow:0 0 25px rgba(0,180,255,0.35);transition:transform .1s,opacity .2s;}
 .lic-btn:active{transform:scale(.97);}
 .lic-btn:disabled{opacity:.5;cursor:not-allowed;}
-.lic-msg{
-  font-size:.88rem;font-weight:700;
-  letter-spacing:1px;text-align:center;
-  min-height:22px;
-}
+.lic-msg{font-size:.88rem;font-weight:700;letter-spacing:1px;text-align:center;min-height:22px;}
 .lic-msg.error{color:#ff4455;}
 .lic-msg.loading{color:#00aaff;}
 .lic-msg.success{color:#00ff88;}
-.lic-footer{
-  font-size:.65rem;color:#223344;
-  letter-spacing:2px;text-align:center;
-  margin-top:4px;
-}
-
-/* ============================================================
-   SETTINGS SCREEN
-   ============================================================ */
-#settingsScreen{
-  display:none;flex-direction:column;align-items:center;justify-content:center;
-  min-height:100vh;width:100%;max-width:520px;padding:24px 20px;overflow-y:auto;
-  background:radial-gradient(ellipse at 50% 30%,#071428 0%,#030a18 55%,#000510 100%);
-}
+.lic-footer{font-size:.65rem;color:#223344;letter-spacing:2px;text-align:center;margin-top:4px;}
+#settingsScreen{display:none;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;width:100%;max-width:520px;padding:24px 20px;overflow-y:auto;background:radial-gradient(ellipse at 50% 30%,#071428 0%,#030a18 55%,#000510 100%);}
 #settingsScreen.show{display:flex;}
 .s-title{font-family:'Orbitron',sans-serif;font-size:2.4rem;font-weight:900;color:#00d4ff;letter-spacing:6px;margin-bottom:6px;text-align:center;text-shadow:0 0 30px #00d4ff88;}
 .s-sub{font-size:.7rem;color:#336688;letter-spacing:3px;margin-bottom:22px;text-align:center;}
@@ -105,23 +55,10 @@ input[type=range]{width:100%;height:4px;-webkit-appearance:none;appearance:none;
 input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:15px;height:15px;border-radius:50%;background:#00d4ff;box-shadow:0 0 8px #00d4ff;cursor:pointer;}
 .s-btn{margin-top:6px;background:linear-gradient(135deg,#00d4ff,#0077cc);color:#000;font-family:'Orbitron',sans-serif;font-size:1.1rem;font-weight:900;letter-spacing:4px;border:none;border-radius:10px;padding:14px 0;cursor:pointer;box-shadow:0 0 25px rgba(0,180,255,0.35);transition:transform .1s;}
 .s-btn:active{transform:scale(.97);}
-
-/* ============================================================
-   GAME & WINNER SCREENS
-   ============================================================ */
-#gameScreen{
-  display:none;width:100%;height:100%;
-  align-items:center;justify-content:center;
-  background:#030a18;
-}
+#gameScreen{display:none;width:100%;height:100%;align-items:center;justify-content:center;background:#030a18;}
 #gameScreen.show{display:flex;}
 #mainCanvas{display:block;width:100%;height:100%;object-fit:contain;background:#030a18;}
-#winnerScreen{
-  position:fixed;inset:0;z-index:200;
-  background:radial-gradient(ellipse at 50% 40%,#071428 0%,#030a18 55%,#000510 100%);
-  display:none;flex-direction:column;align-items:center;justify-content:center;
-  padding-top:55vh;text-align:center;padding:20px;
-}
+#winnerScreen{position:fixed;inset:0;z-index:200;background:radial-gradient(ellipse at 50% 40%,#071428 0%,#030a18 55%,#000510 100%);display:none;flex-direction:column;align-items:center;justify-content:center;padding-top:55vh;text-align:center;padding:20px;}
 #winnerScreen.show{display:flex;animation:fIn .4s ease;}
 @keyframes fIn{from{opacity:0}to{opacity:1}}
 .champ-card{background:rgba(4,15,38,0.98);border:2px solid rgba(0,210,255,0.3);border-radius:24px;padding:40px 50px 36px;display:flex;flex-direction:column;align-items:center;box-shadow:0 0 80px rgba(0,140,255,0.2);max-width:600px;width:100%;animation:cPop .5s cubic-bezier(.34,1.56,.64,1);}
@@ -136,28 +73,20 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:15px;heigh
 </head>
 <body>
 
-<!-- ============================================================
-     LICENSE SCREEN
-     ============================================================ -->
 <div id="licenseScreen">
   <div class="lic-box">
     <div class="lic-logo">🚩 FLAG BATTLE</div>
     <div class="lic-sub">ROYALE EDITION — LICENSED VERSION</div>
-
     <div class="lic-label">Enter Your Access Key</div>
     <input class="lic-input" id="keyInput" type="text" placeholder="XXXX-XXXX-XXXX" maxlength="20"
       oninput="this.value=this.value.toUpperCase()"
       onkeydown="if(event.key==='Enter')verifyKey()">
-
     <button class="lic-btn" id="verifyBtn" onclick="verifyKey()">🔓 VERIFY ACCESS</button>
     <div class="lic-msg" id="licMsg"></div>
     <div class="lic-footer">ACCESS CONTROLLED · UNAUTHORIZED USE PROHIBITED</div>
   </div>
 </div>
 
-<!-- ============================================================
-     SETTINGS SCREEN
-     ============================================================ -->
 <div id="settingsScreen">
   <div class="s-title">FLAG BATTLE</div>
   <div class="s-sub">ROYALE EDITION — 200 NATIONS</div>
@@ -182,20 +111,8 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:15px;heigh
 </div>
 
 <script>
-// ============================================================
-//  ⚙️  CONFIGURATION — শুধু এই দুটো লাইন আপনি বদলাবেন
-// ============================================================
-
-// আপনার Google Apps Script Web App URL এখানে বসান
-// (নিচের setup guide দেখুন)
-const LICENSE_CHECK_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
-
-// আপনার app-এর নাম/version (ইচ্ছামতো বদলান)
+const LICENSE_CHECK_URL = 'https://script.google.com/macros/s/AKfycbwPr2h0N2an3_9jBt-nyncZM9MtsN9F0PXHD7mIhj9GkVckZIebJ9ZfboTTN1wZT4UKXQ/exec';
 const APP_NAME = 'Flag Battle Royale';
-
-// ============================================================
-//  LICENSE VERIFICATION SYSTEM
-// ============================================================
 
 let licenseVerified = false;
 
@@ -203,85 +120,56 @@ async function verifyKey() {
   const key = document.getElementById('keyInput').value.trim();
   const btn = document.getElementById('verifyBtn');
   const msg = document.getElementById('licMsg');
-
-  if (!key || key.length < 4) {
-    msg.className = 'lic-msg error';
-    msg.textContent = '❌ Please enter a valid key';
-    return;
-  }
-
-  // Check করা হচ্ছে
+  if (!key || key.length < 4) { msg.className='lic-msg error'; msg.textContent='❌ Please enter a valid key'; return; }
   btn.disabled = true;
   msg.className = 'lic-msg loading';
   msg.textContent = '⏳ Verifying access...';
-
   try {
-    // Google Sheet-এ check করবে
     const url = `${LICENSE_CHECK_URL}?key=${encodeURIComponent(key)}&app=${encodeURIComponent(APP_NAME)}&ts=${Date.now()}`;
     const response = await fetch(url, { method: 'GET' });
     const data = await response.json();
-
     if (data.valid === true) {
-      // ✅ Access granted
       msg.className = 'lic-msg success';
       msg.textContent = '✅ Access Granted! Loading...';
       licenseVerified = true;
-
       setTimeout(() => {
         document.getElementById('licenseScreen').style.display = 'none';
         document.getElementById('settingsScreen').classList.add('show');
       }, 1200);
-
     } else {
-      // ❌ Access denied
       msg.className = 'lic-msg error';
       msg.textContent = data.message || '❌ Access Denied. Invalid or expired key.';
       btn.disabled = false;
     }
-
   } catch (err) {
-    // Network error বা server problem
     msg.className = 'lic-msg error';
     msg.textContent = '❌ Cannot connect to server. Check internet connection.';
     btn.disabled = false;
   }
 }
 
-// Periodic re-check — game চলার সময়ও প্রতি ৫ মিনিটে check করবে
-// যদি আপনি access বন্ধ করেন, পরের check-এ game বন্ধ হয়ে যাবে
 setInterval(async () => {
   if (!licenseVerified) return;
   const key = document.getElementById('keyInput').value.trim();
   if (!key) return;
-
   try {
     const url = `${LICENSE_CHECK_URL}?key=${encodeURIComponent(key)}&app=${encodeURIComponent(APP_NAME)}&ts=${Date.now()}`;
     const response = await fetch(url, { method: 'GET' });
     const data = await response.json();
-
     if (data.valid !== true) {
-      // Access বন্ধ করা হয়েছে — game বন্ধ
-      licenseVerified = false;
-      gameActive = false;
+      licenseVerified = false; gameActive = false;
       if (animId) { cancelAnimationFrame(animId); animId = null; }
-
       document.getElementById('gameScreen').classList.remove('show');
       document.getElementById('winnerScreen').classList.remove('show');
       document.getElementById('settingsScreen').classList.remove('show');
-
-      const ls = document.getElementById('licenseScreen');
-      ls.style.display = 'flex';
-      const msg = document.getElementById('licMsg');
-      msg.className = 'lic-msg error';
+      const ls = document.getElementById('licenseScreen'); ls.style.display = 'flex';
+      const msg = document.getElementById('licMsg'); msg.className = 'lic-msg error';
       msg.textContent = '🚫 Your access has been revoked by the administrator.';
       document.getElementById('verifyBtn').disabled = false;
     }
-  } catch(e) { /* silent fail on re-check */ }
-}, 5 * 60 * 1000); // 5 মিনিট
+  } catch(e) {}
+}, 5 * 60 * 1000);
 
-// ============================================================
-//  FLAG COLOR DATABASE
-// ============================================================
 const FC={
   bd:['#006a4e','#f42a41'],in:['#ff9933','#fff','#138808'],pk:['#01411c','#fff'],
   us:['#bf0a30','#fff','#002868'],gb:['#012169','#c8102e'],ca:['#f00','#fff','#f00'],
@@ -414,11 +302,11 @@ function drawFC(ctx,code,w,h){
   else if(code==='jo'){ctx.fillStyle='#007a3d';ctx.fillRect(0,0,w,h/3);ctx.fillStyle='#fff';ctx.fillRect(0,h/3,w,h/3);ctx.fillStyle='#ce1126';ctx.fillRect(0,h*2/3,w,h/3);ctx.fillStyle='#000';ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(w*.4,h/2);ctx.lineTo(0,h);ctx.closePath();ctx.fill();star5(ctx,w*.16,h/2,h*.12,'#fff',0);}
   else if(code==='kw'){ctx.fillStyle='#007a3d';ctx.fillRect(0,0,w,h/3);ctx.fillStyle='#fff';ctx.fillRect(0,h/3,w,h/3);ctx.fillStyle='#ce1126';ctx.fillRect(0,h*2/3,w,h/3);ctx.fillStyle='#000';ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(w*.25,h/3);ctx.lineTo(w*.25,h*2/3);ctx.lineTo(0,h);ctx.closePath();ctx.fill();}
   else if(code==='ae'){ctx.fillStyle='#00732f';ctx.fillRect(0,0,w,h/3);ctx.fillStyle='#fff';ctx.fillRect(0,h/3,w,h/3);ctx.fillStyle='#000';ctx.fillRect(0,h*2/3,w,h/3);ctx.fillStyle='#f00';ctx.fillRect(0,0,w*.25,h);}
-  else if(code==='ir'){ctx.fillStyle='#239f40';ctx.fillRect(0,0,w,h/3);ctx.fillStyle='#fff';ctx.fillRect(0,h/3,w,h/3);ctx.fillStyle='#da0000';ctx.fillRect(0,h*2/3,w,h/3);ctx.fillStyle='#c00';ctx.font=`bold ${h*.35}px serif`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('☪',w/2,h/2);}
+  else if(code==='ir'){ctx.fillStyle='#239f40';ctx.fillRect(0,0,w,h/3);ctx.fillStyle='#fff';ctx.fillRect(0,h/3,w,h/3);ctx.fillStyle='#da0000';ctx.fillRect(0,h*2/3,w,h/3);}
   else if(code==='ua'){ctx.fillStyle='#005bbb';ctx.fillRect(0,0,w,h/2);ctx.fillStyle='#ffd500';ctx.fillRect(0,h/2,w,h/2);}
-  else if(code==='by'){ctx.fillStyle='#cf101a';ctx.fillRect(0,0,w,h);ctx.fillStyle='#009a44';ctx.fillRect(0,h*.66,w,h*.34);ctx.fillStyle='#fff';ctx.fillRect(0,0,w*.14,h);ctx.fillStyle='#cf101a';for(let i=0;i<8;i++){ctx.fillRect(0,i*h/8,w*.07,h*.06);}}
-  else if(code==='br'){ctx.fillStyle='#009c3b';ctx.fillRect(0,0,w,h);ctx.fillStyle='#fedf00';ctx.beginPath();ctx.moveTo(w/2,h*.08);ctx.lineTo(w*.92,h/2);ctx.lineTo(w/2,h*.92);ctx.lineTo(w*.08,h/2);ctx.closePath();ctx.fill();ctx.fillStyle='#002776';ctx.beginPath();ctx.arc(w/2,h/2,h*.28,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#fff';ctx.lineWidth=h*.04;ctx.beginPath();ctx.arc(w/2,h*.54,h*.25,-Math.PI*.7,Math.PI*.1);ctx.stroke();ctx.fillStyle='#fff';ctx.font=`bold ${h*.12}px sans-serif`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('ORDEM E PROGRESSO',w/2,h*.54);}
-  else if(code==='ar'){ctx.fillStyle='#74acdf';ctx.fillRect(0,0,w,h/3);ctx.fillStyle='#fff';ctx.fillRect(0,h/3,w,h/3);ctx.fillStyle='#74acdf';ctx.fillRect(0,h*2/3,w,h/3);ctx.fillStyle='#f6b40e';ctx.beginPath();ctx.arc(w/2,h/2,h*.16,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#f6b40e';ctx.lineWidth=h*.04;for(let i=0;i<16;i++){const a=i*Math.PI/8;ctx.beginPath();ctx.moveTo(w/2+Math.cos(a)*h*.18,h/2+Math.sin(a)*h*.18);ctx.lineTo(w/2+Math.cos(a)*h*.27,h/2+Math.sin(a)*h*.27);ctx.stroke();}ctx.fillStyle='#843511';ctx.beginPath();ctx.arc(w/2,h/2,h*.1,0,Math.PI*2);ctx.fill();ctx.fillStyle='#f6b40e';ctx.beginPath();ctx.arc(w/2,h/2,h*.08,0,Math.PI*2);ctx.fill();}
+  else if(code==='by'){ctx.fillStyle='#cf101a';ctx.fillRect(0,0,w,h);ctx.fillStyle='#009a44';ctx.fillRect(0,h*.66,w,h*.34);ctx.fillStyle='#fff';ctx.fillRect(0,0,w*.14,h);}
+  else if(code==='br'){ctx.fillStyle='#009c3b';ctx.fillRect(0,0,w,h);ctx.fillStyle='#fedf00';ctx.beginPath();ctx.moveTo(w/2,h*.08);ctx.lineTo(w*.92,h/2);ctx.lineTo(w/2,h*.92);ctx.lineTo(w*.08,h/2);ctx.closePath();ctx.fill();ctx.fillStyle='#002776';ctx.beginPath();ctx.arc(w/2,h/2,h*.28,0,Math.PI*2);ctx.fill();}
+  else if(code==='ar'){ctx.fillStyle='#74acdf';ctx.fillRect(0,0,w,h/3);ctx.fillStyle='#fff';ctx.fillRect(0,h/3,w,h/3);ctx.fillStyle='#74acdf';ctx.fillRect(0,h*2/3,w,h/3);}
   else if(code==='cl'){ctx.fillStyle='#fff';ctx.fillRect(0,0,w,h/2);ctx.fillStyle='#d52b1e';ctx.fillRect(0,h/2,w,h/2);ctx.fillStyle='#0039a6';ctx.fillRect(0,0,w*.33,h/2);star5(ctx,w*.165,h*.25,h*.16,'#fff',0);}
   else if(code==='cu'){for(let i=0;i<5;i++){ctx.fillStyle=i%2===0?'#002a8f':'#fff';ctx.fillRect(0,i*h/5,w,h/5+1);}ctx.fillStyle='#cf142b';ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(w*.4,h/2);ctx.lineTo(0,h);ctx.closePath();ctx.fill();star5(ctx,w*.17,h/2,h*.14,'#fff',0);}
   else if(code==='az'){ctx.fillStyle='#0092bc';ctx.fillRect(0,0,w,h/3);ctx.fillStyle='#e8192c';ctx.fillRect(0,h/3,w,h/3);ctx.fillStyle='#00b140';ctx.fillRect(0,h*2/3,w,h/3);const cx=w*.52,cy=h/2,r=h*.22;moon(ctx,cx,cy,r,'#fff','#e8192c',-15);star5(ctx,cx+r*.6,cy,r*.2,'#fff',0);}
